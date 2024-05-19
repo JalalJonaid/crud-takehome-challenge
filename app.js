@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors'); //QUESTION: WHY DID I NEED TO ADD THIS? -JJ
 
 const app = express();
 
