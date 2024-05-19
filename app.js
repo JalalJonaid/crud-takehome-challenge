@@ -5,8 +5,14 @@ const app = express();
 
 // TODO: Add application-wide middleware
 app.use(cors());
+app.use(express.json())
 
 // TODO: Add controller(s)
+app.get('/', (req, res) => {
+    res.status(200).json({
+        data: "Service is running."
+    })
+})
 
 // TODO: Implement health check route
 
